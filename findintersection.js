@@ -19,6 +19,7 @@ const findintersection = (arr) => {
     let intersection = [];
     let merged = [arr.join()];
     let sectionOne = merged[0].replace(/\s/g, "").split(",")
+    
     sectionOne.forEach(item => {
         if (sectionOne.indexOf(item) !== sectionOne.lastIndexOf(item) && !intersection.includes(item)) {
             intersection.push(item);
